@@ -9,6 +9,8 @@
         public int InstallmentAmount { get; set; }
         //Jumlah cicilan dalam Rp
         public int InstallmentPayment { get; set; }
+        public int NextInstallmentPayment { get; set; }
+        public int RemainingPayment { get; set; }
         public DateTime Deadline { get; set; }
         public string Status { get; set; }
         public DateTime CreatedAt { get; set; }

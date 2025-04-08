@@ -38,7 +38,7 @@ namespace LoanManagementPaymentService.Controllers
         {
             if (id != model.Id) return BadRequest();
             await _service.UpdateAsync(model);
-            return NoContent();
+            return Ok();
         }
 
         //HardDelete
@@ -46,7 +46,7 @@ namespace LoanManagementPaymentService.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             await _service.DeleteAsync(id);
-            return NoContent();
+            return Ok();
         }
     }
 }
